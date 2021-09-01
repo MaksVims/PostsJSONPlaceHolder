@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 800px;
+  padding: 20px 0;
+}
+
+.site-container {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  border: 1px solid teal;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.postForm input:last-of-type {
+  margin-bottom: 20px;
+}
+
+.posts__filter {
+  margin: 15px 0;
+}
+
+.loader__wrapper {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+
