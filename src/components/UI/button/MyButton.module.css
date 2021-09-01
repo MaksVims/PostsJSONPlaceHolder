@@ -1,0 +1,15 @@
+.btn {
+  border: 1px solid teal;
+  padding: 10px;
+  cursor: pointer;
+  background: transparent;
+  color: teal;
+  transition: color .3s, background-color .3s;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  background: teal;
+  transition: color .3s, background-color .3s;
+}

@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  display: none;
+}
+
+.modal__content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .7);
+}
+
+.modal.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

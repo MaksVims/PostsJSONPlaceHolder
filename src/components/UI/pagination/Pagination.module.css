@@ -1,0 +1,22 @@
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  padding: 10px;
+  color: teal;
+  background: #fff;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.pagination__item.current {
+  color: #fff;
+  background: teal;
+}
