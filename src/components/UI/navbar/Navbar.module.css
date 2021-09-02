@@ -1,0 +1,18 @@
+.navbar {
+  background: lightblue;
+  min-height: 70px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar__item {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar__item:not(:last-child) {
+  margin-right: 15px;
+}

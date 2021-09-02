@@ -7,7 +7,7 @@ export default class PostService {
     return response.data
   }
 
-  static async getPostsByPage(page, limit){
+  static async getPostsByPage(page, limit) {
     const response = await axios.get('https://jsonplaceholder.typicode.com/posts', {
       params: {
         '_page': page,
@@ -15,5 +15,15 @@ export default class PostService {
       }
     })
     return response
+  }
+
+  static async getPostById(id) {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    return response.data
+  }
+
+  static async getCommentsPostById(id) {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
+    return response.data
   }
 }
